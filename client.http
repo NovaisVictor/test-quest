@@ -1,0 +1,27 @@
+@baseUrl = http://localhost:3000/api/v1
+
+# @name create_client
+POST {{baseUrl}}/clients
+Content-Type: application/json
+
+{
+    "name": "Victor Novais",
+    "email": "Vicfr@gmail.com",
+    "phone": "13182446082",
+    "cep": "11410420"
+}
+
+###
+
+# @name get_client
+GET {{baseUrl}}/clients/65346fd4d4210ef4597274b5
+
+###
+
+# @name list_clients
+GET {{baseUrl}}/clients
+
+###
+
+# @name delete_client
+GET {{baseUrl}}/clients
